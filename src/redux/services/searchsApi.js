@@ -21,5 +21,5 @@ const searchsApi = createApi({
     })
 });
 
-export const {useFetchSearchByIdQuery, useCreateSearchMutation } = searchsApi;
+export const {useFetchSearchByIdQuery, useCreateSearchMutation} = searchsApi;
 export default searchsApi;

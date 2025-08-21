@@ -1,5 +1,5 @@
 const getBaseUrl = () => {
-    return "https://api-textobiblico.vercel.app" // "http://localhost:5000"
+    return "http://localhost:5000" // "https://api-textobiblico.vercel.app"
 }
 
 export default getBaseUrl

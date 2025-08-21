@@ -3,9 +3,12 @@ import App from "../App";
 import Search from "../pages/Search";
 import Home from "../pages/Home";
 import Result from "../pages/Result";
+import Read from "../pages/Read";
 import NoPage from "../pages/NoPage";
 import NotFound from "../pages/NotFound";
 import About from "../pages/About"
+import Login from "../components/Login";
+import Register from "../components/Register";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +27,10 @@ const router = createBrowserRouter([
                 path: "/r/:id",
                 element: <Result />
             },
+                        {
+                path: "/rd/:id/:i",
+                element: <Read />
+            },
             {
                 path:"/*",
                 element: <NoPage />
@@ -35,6 +42,14 @@ const router = createBrowserRouter([
             {
                 path:"/about",
                 element: <About />
+            },
+            {
+                path:"/login",
+                element: <Login />
+            },
+            {
+                path:"/register",
+                element: <Register />
             }
         ]
     }
